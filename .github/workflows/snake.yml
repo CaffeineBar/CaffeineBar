@@ -1,10 +1,12 @@
 name: Generate Snake Animation
 
-# Jadwal kapan animasi diperbarui (otomatis setiap 12 jam atau bisa dijalankan manual)
 on:
   schedule:
     - cron: "0 */12 * * *"
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build:
